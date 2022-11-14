@@ -7,7 +7,7 @@ import { Link, Navigate, Route, useNavigate} from "react-router-dom";
 const FormOrder = ({ oldOrder, onEdit, readOrders }) => {
     const navigate = useNavigate();
     var newDate = new Date();
-    var current_date = newDate.getFullYear() + "-" + (newDate.getMonth() + 1) + "-" + "0" + newDate.getDate();
+    var current_date = newDate.getFullYear() + "-" + (newDate.getMonth() + 1) + "-"+ newDate.getDate();
     const [date, setDate] = useState(current_date);
     const [product, setProduct] = useState('0');
     const [price, setPrice] = useState(0);
